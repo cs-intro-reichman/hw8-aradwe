@@ -32,7 +32,7 @@
     }
 
     /** Returns the follows array. */
-    public String[] getFollows() {
+    public String[] getfFollows() {
         return follows;
     }
 
