@@ -136,5 +136,9 @@ public class Network {
         }
         return result;
     }
+
+    public int getUserCount(){
+        return this.userCount;
+    }
     
 }

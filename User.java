@@ -32,7 +32,7 @@
     }
 
     /** Returns the follows array. */
-    public String[] getfFollows() {
+    public String[] getFollows() {
         return follows;
     }
 
@@ -43,7 +43,7 @@
 
     /** If this user follows the given name, returns true; otherwise returns false. */
     public boolean follows(String name) {
-        for(int i = 0; i < follows.length; i++){
+        for(int i = 0; i < fCount; i++){
             if(follows[i] != null && follows[i].equals(name)){
                 return true;
             }
