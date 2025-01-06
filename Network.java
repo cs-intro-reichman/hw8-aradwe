@@ -133,11 +133,14 @@ public class Network {
 
     // Returns a textual description of all the users in this network, and who they follow.
     public String toString() {
-       String result = "";
+       String result = "Network:\n";
        for (int i = 0; i < userCount; i++) {
         if (users[i] != null) {
-            result += users[i].toString() + "\n"; // Concatenate each user's details
+            result += users[i].toString(); // Concatenate each user's details
             }
+        if (i < userCount - 1) { // Only add a newline if it's not the last user
+            result += "\n";
+        }
         }
         return result;
     }
